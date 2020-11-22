@@ -22,16 +22,19 @@ namespace TddChessEngineLib
 
         public void Turn(string startPosition, string finalPosition)
         {
+            // код хода для чёрной фигуры
             if(FigureColor == FigureColor.Black)
             {
                 if(Convert.ToInt32(finalPosition[1]) < Convert.ToInt32(startPosition[1]))
                 {
                     CurrentPosition = finalPosition;    
                 }
-
+                
+                // todo посмотреть как тестировать выброс исключений
                 return;
             }
 
+            // код хода для белой фигуры (пока без проверок)
             CurrentPosition = finalPosition;
         }
     }
