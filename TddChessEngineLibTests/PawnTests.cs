@@ -31,13 +31,23 @@ namespace TddChessEngineLibTests
         [Fact]
         public void WhenWhitePawnTriesGoBack_ThenItsCantGoBack()
         {
-            //todo add test
+            string startPosition = "E2";
+            string finalPosition = "E1";
+
+            Pawn pawn = new Pawn(startPosition, FigureColor.White);
+
+            Assert.Throws<ArgumentException>(() => pawn.Turn(startPosition, finalPosition));
         }
 
         [Fact]
         public void WhenWhitePawnTurnsFromE3ToE5_ThenItsCantJump()
         {
-            //todo add test
+            string startPosition = "E3";
+            string finalPosition = "E5";
+
+            Pawn pawn = new Pawn(startPosition, FigureColor.White);
+
+            Assert.Throws<ArgumentException>(() => pawn.Turn(startPosition, finalPosition));
         }
     }
 }
