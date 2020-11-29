@@ -30,8 +30,7 @@ namespace TddChessEngineLib
                     CurrentPosition = finalPosition;    
                 }
                 
-                // todo посмотреть как тестировать выброс исключений
-                return;
+                throw new ArgumentException("Black Pawn can't go back");
             }
 
             // код хода для белой фигуры (пока без проверок)

@@ -25,9 +25,19 @@ namespace TddChessEngineLibTests
             string finalPosition = "E8";
             Pawn pawn = new Pawn(startPosition, FigureColor.Black);
 
-            pawn.Turn(startPosition, finalPosition);
+            Assert.Throws<ArgumentException>(() => pawn.Turn(startPosition, finalPosition));
+        }
 
-            Assert.Equal(startPosition, pawn.CurrentPosition);
+        [Fact]
+        public void WhenWhitePawnTriesGoBack_ThenItsCantGoBack()
+        {
+            //todo add test
+        }
+
+        [Fact]
+        public void WhenWhitePawnTurnsFromE3ToE5_ThenItsCantJump()
+        {
+            //todo add test
         }
     }
 }
