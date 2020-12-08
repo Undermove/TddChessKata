@@ -68,9 +68,33 @@ namespace TddChessEngineLibTests
         [Fact]
         public void WhenElephantTurnsFromC1ToBBB_ThenItThrowsArgumentException()
         {
-            // усложнённая задача
-            // написать тест, который проверяет случай, когда слон пытается пойти на клетку, которой не существует BBB
-            // в этом случае метод Turn кидает исключение
+            // Arrange
+            // задаём слону стартовую позицию
+            string elephantStartPosition = "C1";
+            string elephantEndPosition = "BBB";
+            Elephant elephant = new Elephant(elephantStartPosition);
+
+            // Act and
+            elephant.Turn(elephantEndPosition);
+
+            // Assert
+            // написать проверку самому
+        }
+
+        [Fact]
+        public void YourOwnTest()
+        {
+            // Arrange
+            // задаём слону стартовую позицию
+            string elephantStartPosition = "C1";
+            string elephantEndPosition = "BBB";
+            Elephant elephant = new Elephant(elephantStartPosition);
+
+            // Act and
+            elephant.Turn(elephantEndPosition);
+
+            // Assert
+            // написать проверку самому
         }
     }
 }
