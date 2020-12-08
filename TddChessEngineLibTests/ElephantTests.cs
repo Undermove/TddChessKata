@@ -84,17 +84,7 @@ namespace TddChessEngineLibTests
         [Fact]
         public void YourOwnTest()
         {
-            // Arrange
-            // задаём слону стартовую позицию
-            string elephantStartPosition = "C1";
-            string elephantEndPosition = "BBB";
-            Elephant elephant = new Elephant(elephantStartPosition);
-
-            // Act and
-            elephant.Turn(elephantEndPosition);
-
-            // Assert
-            // написать проверку самому
+            // придумать свой любой подходящий тест и написать его. К примеру, что будет если слон двинется вперёд?
         }
     }
 }
