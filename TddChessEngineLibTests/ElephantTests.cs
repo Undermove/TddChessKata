@@ -13,7 +13,7 @@ namespace TddChessEngineLibTests
             // Arrange
             // Act
             // создаём слона сейчас этот код просто не работает и подчёркнут красным, это нужно исправить
-            Elephant elephant = new Elephant(); 
+            Elephant elephant = new Elephant(""); 
 
             //  Assert
             // проверяем что он создался
